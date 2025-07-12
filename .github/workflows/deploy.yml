@@ -28,8 +28,11 @@ jobs:
         with:
           node-version: lts/*
 
-      - name: Install step
-        run: "npm install"
+      - name: Deploy Install
+  run: |
+    pwd
+    ls
+    npm install
 
       - name: Build step
         run: "npm run build"
